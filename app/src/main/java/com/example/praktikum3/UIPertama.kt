@@ -76,6 +76,7 @@ fun ActivitasPertama(modifier: Modifier) {
         Text(
             stringResource(R.string.copy),
             modifire = Modifier
+                .align (Alignment.BottomCenter)
         )
     }
 }

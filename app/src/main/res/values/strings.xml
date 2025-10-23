@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Praktikum 3</string>
+    <string name="prodi">Teknologi Informasi</string>
+    <string name="univ">Universitas Gadjah Mada</string>
+    <string name="nama">Riankit</string>
+    <string name="alamat">Bantul</string>
+    <string name="copy">copyright, 2030</string>
+</resources>

@@ -98,7 +98,7 @@ fun ActivitasPertama(modifier: Modifier) {
                         modifier = Modifier.padding(top=10.dp)
                     )
                     Text(
-                        stringResource(R.string.alamat),
+                        stringResource(R.string.alamat1),
                         fontSize = 20.sp,
                         color = Color.Yellow,
                         modifier = Modifier.padding(top=10.dp, bottom = 15.dp)
@@ -106,7 +106,43 @@ fun ActivitasPertama(modifier: Modifier) {
                 }
             }
         }
-
+        Card( modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0xFF006400)
+            )){
+            Row(){
+                val gambar = painterResource(drawable.ugm)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(150.dp).padding(5.dp)
+                )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column(){
+                    Text(
+                        stringResource(R.string.nama),
+                        fontSize = 40.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.telpon),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat2),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp, bottom = 15.dp)
+                    )
+                }
+            }
+        }
     }
     Box(
         modifier = Modifier

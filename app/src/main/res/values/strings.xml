@@ -4,5 +4,9 @@
     <string name="univ">Universitas Gadjah Mada</string>
     <string name="nama">Riankit</string>
     <string name="alamat">Bantul</string>
+    <string name="alamat1">Sleman</string>
+    <string name="alamat2">Depok</string>
+    <string name="telpon">089928829292</string>
+    <string name="Telpon">089688348426</string>
     <string name="copy">copyright, 2030</string>
 </resources>

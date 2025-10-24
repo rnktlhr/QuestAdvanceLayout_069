@@ -24,6 +24,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.praktikum3.R.drawable
 
 @Composable
 fun ActivitasPertama(modifier: Modifier) {
@@ -44,17 +45,17 @@ fun ActivitasPertama(modifier: Modifier) {
                 containerColor = Color.LightGray
             )){
             Row(){
-                val gambar = painterResource(R.drawable.logo)
+                val gambar = painterResource(drawable.ugm)
                 Image(
                     painter = gambar,
                     contentDescription = null,
-                    modifier = Modifier.size(100.dp).padding(5.dp)
+                    modifier = Modifier.size(150.dp).padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
                 Column(){
                     Text(
                         stringResource(R.string.nama),
-                        fontSize = 30.sp,
+                        fontSize = 40.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
                         modifier = Modifier.padding(top=15.dp)
@@ -72,18 +73,40 @@ fun ActivitasPertama(modifier: Modifier) {
             .fillMaxWidth(1f)
             .padding(12.dp),
             colors = CardDefaults.cardColors(
-                containerColor = Color.LightGray
+                containerColor = Color.Blue
             )){
             Row(){
-                val gambar = painterResource(R.drawable.ugm)
+                val gambar = painterResource(drawable.ugm)
                 Image(
                     painter = gambar,
                     contentDescription = null,
-                    modifier = Modifier.size(100.dp).padding(5.dp)
+                    modifier = Modifier.size(150.dp).padding(5.dp)
                 )
-
+                Spacer(modifier = Modifier.width(30.dp))
+                Column(){
+                    Text(
+                        stringResource(R.string.nama),
+                        fontSize = 40.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top=15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.Telpon),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top=10.dp, bottom = 15.dp)
+                    )
+                }
             }
         }
+
     }
     Box(
         modifier = Modifier

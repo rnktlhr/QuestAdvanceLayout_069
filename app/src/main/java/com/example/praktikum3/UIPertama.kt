@@ -68,6 +68,22 @@ fun ActivitasPertama(modifier: Modifier) {
                 }
             }
         }
+        Card( modifier = Modifier
+            .fillMaxWidth(1f)
+            .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color.LightGray
+            )){
+            Row(){
+                val gambar = painterResource(R.drawable.ugm)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(100.dp).padding(5.dp)
+                )
+
+            }
+        }
     }
     Box(
         modifier = Modifier
